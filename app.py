@@ -16,9 +16,9 @@ def my_output(query):
 st.set_page_config(page_title="BOT_BHAI")
 st.header("Hello Dibyojyoti, I am your BOT_BHAI")
 input = st.chat_input("Ask Your Question:" , key = "input")  
-submit = st.button("SUBMIT") 
+#submit = st.button("SUBMIT") 
 #=================================================================
-if submit :
+if input :
     response = my_output(input) 
     st.subheader("Answer:")
     st.write(response)
