@@ -19,7 +19,8 @@ input = st.chat_input("Ask Your Question:" , key = "input")
 #submit = st.button("SUBMIT") 
 #=================================================================
 if input :
-    st.chat_message(input)
+    with st.chat_message(input):
+        st.write(input)
     response = my_output(input) 
     st.subheader("Answer:")
     st.write(response)
