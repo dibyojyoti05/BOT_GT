@@ -14,10 +14,10 @@ def my_output(query):
 #### UI Development using streamlit 
 
 st.set_page_config(page_title="BOT_BHAI")
-st.header("BOT_BHAI") 
-input = st.text_input("Ask Your Question:" , key = "input")  
+st.header("Hello Dibyojyoti, I am your BOT_BHAI")
+input = st.text_input("Ask Your Question:" , key = "input",placeholder="Ask anything")  
 submit = st.button("SUBMIT") 
-
+#=================================================================
 if submit :
     response = my_output(input) 
     st.subheader("Answer:")
